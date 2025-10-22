@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://sparklights.co.ke/</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sparklights.co.ke/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://sparklights.co.ke/sw/" />
+    <image:image>
+      <image:loc>https://sparklights.co.ke/roomm1.png</image:loc>
+      <image:caption>Decorative and Event Lighting by Spark_Lights254 in Nairobi, Kenya</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Collection / All Products -->
+  <url>
+    <loc>https://sparklights.co.ke/collection.html</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://sparklights.co.ke/wow1.jpg</image:loc>
+      <image:caption>Golden Round Lights and Decorative Chandeliers - Spark_Lights254</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Category Pages -->
+  <url>
+    <loc>https://sparklights.co.ke/chandeliers.html</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sparklights.co.ke/number3.jpg</image:loc>
+      <image:caption>Elegant Chandeliers and Pendant Lights - Spark_Lights254</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sparklights.co.ke/outdoor-lights.html</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sparklights.co.ke/out1.jpg</image:loc>
+      <image:caption>Modern Outdoor Lights - Nairobi Kenya - Spark_Lights254</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sparklights.co.ke/fairy-lights.html</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://sparklights.co.ke/number1.jpg</image:loc>
+      <image:caption>Fairy Lights for Weddings & Events - Spark_Lights254</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://sparklights.co.ke/#contact.html</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://sparklights.co.ke/#about.html</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Swahili Version -->
+  <url>
+    <loc>https://sparklights.co.ke/sw/</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sparklights.co.ke/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://sparklights.co.ke/sw/" />
+  </url>
+
+</urlset>

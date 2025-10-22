@@ -1,0 +1,57 @@
+# robots.txt for Spark_Lights254
+# Optimized for Google, Bing, and Yahoo with image SEO and fast crawl rates
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /drafts/
+Crawl-delay: 1
+
+# Sitemap Location
+Sitemap: https://sparklights.co.ke/sitemap.xml
+
+# Main Bots (Search Engines)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /products/
+Disallow: /private/
+Crawl-delay: 1
+
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 1
+
+# Friendly Crawlers
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# 🚫 Block AI Data Scrapers
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+
+# 🌍 Notes
+# Spark_Lights254 - Premium Decorative & Event Lighting in Nairobi, Kenya
+# URL: https://sparklights.co.ke/
+# Contact: info@sparklights.co.ke | WhatsApp: +254712827840
+# Focus: Chandeliers, Fairy Lights, Outdoor, Wall, Ceiling, and Event Lights
