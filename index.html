@@ -118,6 +118,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="analytics.css" />
 </head>
 
 <body>
@@ -451,6 +452,16 @@
         </div>
     </footer>
 
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Engagement Indicator -->
+    <div class="engagement-indicator" id="engagement-indicator">
+        <i class="fas fa-heart"></i> You're exploring our lights! Keep browsing for more amazing options.
+    </div>
+
     <!-- Floating WhatsApp Button -->
     <div class="floating-whatsapp">
         <div class="whatsapp-tooltip">At Kai Electricals, We shine & Glow with U today!</div>
@@ -458,6 +469,18 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Kai Analytics System -->
+    <script src="analytics.js"></script>
 
     <script>
         // Mobile Menu Toggle

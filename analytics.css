@@ -1,0 +1,326 @@
+/**
+ * Kai Electricals - Analytics & Exit Intent Dialog Styles
+ * Modern, responsive styling for user engagement features
+ */
+
+/* Exit Intent Dialog Styles */
+.exit-intent-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.exit-intent-dialog.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.exit-dialog-content {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    transform: scale(0.8) translateY(50px);
+    transition: all 0.3s ease;
+    border: 2px solid #0b72ff;
+}
+
+.exit-intent-dialog.show .exit-dialog-content {
+    transform: scale(1) translateY(0);
+}
+
+.exit-dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 15px;
+    border-bottom: 1px solid #e9ecef;
+    background: linear-gradient(135deg, #0b72ff 0%, #0056b3 100%);
+    color: white;
+    border-radius: 18px 18px 0 0;
+}
+
+.exit-dialog-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exit-dialog-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.exit-dialog-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.exit-dialog-body {
+    padding: 25px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exit-dialog-body p {
+    margin: 0 0 15px 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.exit-dialog-body ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    color: #555;
+}
+
+.exit-dialog-body li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.exit-dialog-actions {
+    padding: 20px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid #e9ecef;
+}
+
+.exit-dialog-actions .btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.exit-dialog-actions .btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.exit-dialog-actions .btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+}
+
+.exit-dialog-actions .btn-primary {
+    background: linear-gradient(135deg, #0b72ff 0%, #0056b3 100%);
+    color: white;
+}
+
+.exit-dialog-actions .btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(11, 114, 255, 0.3);
+}
+
+.exit-dialog-actions .btn-whatsapp {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: white;
+}
+
+.exit-dialog-actions .btn-whatsapp:hover {
+    background: linear-gradient(135deg, #128c7e 0%, #075e54 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Enhanced Click Tracking Indicators */
+.click-indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #0b72ff 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    animation: clickPulse 0.6s ease-out;
+}
+
+@keyframes clickPulse {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(11, 114, 255, 0.2);
+    z-index: 9998;
+}
+
+.scroll-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #0b72ff 0%, #25d366 100%);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Engagement Indicators */
+.engagement-indicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #0b72ff 0%, #25d366 100%);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9997;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.engagement-indicator.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .exit-dialog-content {
+        width: 95%;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    
+    .exit-dialog-header {
+        padding: 20px 25px 15px;
+    }
+    
+    .exit-dialog-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .exit-dialog-body {
+        padding: 20px 25px;
+    }
+    
+    .exit-dialog-actions {
+        padding: 15px 25px 25px;
+    }
+    
+    .exit-dialog-actions .btn {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .exit-dialog-content {
+        width: 98%;
+        margin: 10px;
+        border-radius: 12px;
+    }
+    
+    .exit-dialog-header {
+        padding: 15px 20px 10px;
+    }
+    
+    .exit-dialog-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .exit-dialog-body {
+        padding: 15px 20px;
+    }
+    
+    .exit-dialog-body p {
+        font-size: 0.9rem;
+    }
+    
+    .exit-dialog-actions {
+        padding: 10px 20px 20px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .exit-dialog-content {
+        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+        color: #e2e8f0;
+    }
+    
+    .exit-dialog-body p {
+        color: #e2e8f0;
+    }
+    
+    .exit-dialog-body li {
+        color: #cbd5e0;
+    }
+}
+
+/* Animation for smooth transitions */
+.exit-intent-dialog * {
+    box-sizing: border-box;
+}
+
+/* Focus management for accessibility */
+.exit-dialog-close:focus,
+.exit-dialog-actions .btn:focus {
+    outline: 2px solid #0b72ff;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .exit-dialog-content {
+        border: 3px solid #000;
+    }
+    
+    .exit-dialog-actions .btn {
+        border: 2px solid #000;
+    }
+}
